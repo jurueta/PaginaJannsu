@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="assets/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fontawesome-free-5.13.0-web/css/all.min.css">
+  <link rel="icon" type="image/png" href="assets/img/nabe.png">
+  <title>Jannsu</title>
+</head>
+
+<!-- BODY -->
+
+<body class="bg-gray-lith">
+
+  <nav class="navbar navbar-light bg-light navbar-expand-lg p-fixed z-index-5">
+    <div class="container py-10">
+      <div class="d-flex justify-content-center">
+        <a class="navbar-brand d-flex" href="index.html">
+          <h3 class="fw-bold">Jannsu</h3> <img src="assets/img/nabe.png" alt="nabe" width="40px" height="40px">
+        </a>
+      </div>
+      <button class="navbar-toggler border-none" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="logIn.html" class="nav-link">Login</a></li>
+          <li class="nav-item"><a href="singUp.html" class="nav-link active">sign up</a></li>
+          <li class="nav-item"><a href="table.html" class="nav-link">Table</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="boddy-home"">
+      <div class=" container bg-transparent" style="padding-top:50px">
+    <div class="row">
+      <div class="col-sm-9 bg-gris-trans br-20 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5" style="background:none;border:none">
+          <div class="card-body">
+            <h5 class="card-title text-center white">Regitsro Usuario</h5>
+            <form class="form-signin" id="formularioRegiatro" action="table.html" method="post">
+              <div class="form-label-group">
+                <label for="inputEmail" class="white">Direccion De Correo</label>
+                <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Correo" required autofocus>
+              </div>
+
+              <div class="form-label-group">
+                <label for="inputNombre" class="white">Nombre</label>
+                <input type="text" id="inputNombre" name="inputNombre" class="form-control" placeholder="Nombre" required autofocus>
+              </div>
+
+              <div class="form-label-group">
+                <label for="inputApellido" class="white">Apellido</label>
+                <input type="text" id="inputApellido" name="inputApellido" class="form-control" placeholder="Apellido" required autofocus>
+              </div>
+
+              <div class="form-label-group">
+                <label for="inputPassword" class="white">Contraseña</label>
+                <input type="password" id="inputPassword" name="inputPassword" class="form-control mb-2" placeholder="Contraseña" required>
+              </div>
+              <button class="btn mt-4 bg-red btn-lg btn-primary btn-block text-uppercase" id="btnRegistrarse"
+                type="submit">Registrarse</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class=" w-100 footer" id="footer-h">
+    <div class="container">
+
+      <!-- FOOTER -->
+      <div class="mt-4 d-flex">
+        <div class="row w-100 justify-content-between align-items-center">
+          <div class="d-flex align-items-center col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <h2 class="white">Jannsu</h2>
+            <img src="assets/img/nabe.png" alt="nabe" width="80px" height="80px">
+          </div>
+
+          <div class="row white col-6 col-sm-4 col-md-3 col-lg-3 col-xl-3 justify-content-between">
+            <a href="#"><i class="fab fa-facebook fz-30 pl-2"></i></a>
+            <a href="#"><i class="fab fa-instagram fz-30 pl-2"></i></a>
+            <a href="#"><i class="fab fa-youtube fz-30 pl-2"></i></a>
+            <a href="#"><i class="fab fa-twitter fz-30 pl-2"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class=" container-fluid justify-content-center px-10">
+        <p class="text-center white border-white pt-3 mt-2">Jannsu Copyright © 2020</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="assets/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script src="assets/fontawesome-free-5.13.0-web/js/all.min.js"></script>
+
+    <script>
+
+      $(document).ready(function () {
+        $("#formularioRegiatro").validate({
+          rules: {
+            inputNombre: {
+              required: true
+            },
+            inputEmail: {
+              required: true
+            },
+            inputApellido: {
+              required: true
+            },
+            inputPassword: {
+              required: true
+            }
+          },
+          messages: {
+            inputNombre: {
+              required: "Por favor, diligencie este campo"
+            },
+            inputEmail: {
+              required: "Por favor, diligencie este campo"
+            },
+            inputApellido: {
+              required: "Por favor, diligencie este campo"
+            },
+            inputPassword: {
+              required: "Por favor, diligencie este campo"
+            }
+          }
+        });
+      });
+
+      $("#btnRegistrarse").click(function () {
+        var validado = $("#formularioRegiatro").valid();
+        if (validado) {
+          usuarios = JSON.parse(localStorage.getItem('Usuarios'));
+          if (usuarios == null) {
+            usuarios = [{
+              "nombre": $("#inputNombre").val(),
+              "apellido": $("#inputApellido").val(),
+              "correo": $("#inputEmail").val(),
+              "password": $("#inputPassword").val()
+            }];
+            localStorage.setItem("Usuarios", JSON.stringify(usuarios))
+          } else {
+            usuarios.push(
+              {
+                "nombre": $("#inputNombre").val(),
+                "apellido": $("#inputApellido").val(),
+                "correo": $("#inputEmail").val(),
+                "password": $("#inputPassword").val()
+              }
+            );
+            localStorage.setItem("Usuarios", JSON.stringify(usuarios))
+          }
+        }
+      });
+
+    </script>
+
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+html {
+  font-family: 'Abel', sans-serif !important;
+  font-family: 'PT Sans', sans-serif !important;
+}
+
+button, input, select {
+  outline: none !important;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+.body-new{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  justify-items: center;
+  min-height: 80vh;
+  overflow-x: auto;
+  flex:1 0 auto;
+  padding-top: 20px;
+}
+#footer-h a {
+  font-style: none;
+  color: white !important;
+}
+
+#footer-h a:hover {
+  font-style: none;
+  color: rgb(238, 238, 238) !important;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.bg-bonce {
+  background-color: #baa18b;
+}
+.bg-platino {
+  background-color: #d5d5d5;
+}
+
+.bg-diamante {
+  background-color: #ecc335;
+}
+
+.bg-gray-lith {
+  background-color: #f8f9fa;
+}
+
+.bg-basic {
+  background-image: linear-gradient(to bottom left, #02f8d3 , #076777);
+}
+
+.bg-standard {
+  background-image: linear-gradient(to bottom left, #f59ab3 , #74335d);
+}
+
+.bg-premium {
+  background-image: linear-gradient(to bottom left, #f9be89 , #b6495b);
+}
+
+.border-gradiante-blue {
+  border-image-source: linear-gradient(to left, #076777, #02f8d3, #076777);
+}
+
+
+.border-gradiante-morado {
+  border-image-source: linear-gradient(to left, #74335d, #f59ab3, #74335d);
+}
+
+
+
+.border-gradiante-amarillo {
+  border-image-source: linear-gradient(to left, #b6495b, #f9be89, #b6495b);
+}
+
+.color-btn-azul {
+  background-image: linear-gradient(to left bottom, #02f8d3 , #076777);
+}
+
+
+.color-btn-morado {
+  background-image: linear-gradient(to left bottom, #f59ab3 , #74335d);
+}
+
+
+.color-btn-amarillo {
+  background-image: linear-gradient(to left bottom, #f9be89 , #b6495b);
+}
+
+
+
+.azul-cars {
+  color: #076777;
+}
+
+.morado-cars {
+  color: #74335d;
+}
+
+
+.amarillo-cars {
+  color: #b6495b;
+}
+
+
+
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.z-index-5 {
+  z-index: 5;
+}
+
+.py-20{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+
+.py-10{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer{
+  background-color: crimson;
+  height: 160px;
+  position: fixed;
+  bottom: 0;
+  z-index: 50;
+}
+
+#boddy-home {
+ flex: 1 0 auto;
+ overflow-x: hidden;
+ align-items: center!important;
+ display: flex!important;
+ padding-bottom: 190px;
+ margin-top: 85px;
+}
+
+.p-fixed{
+  position: fixed!important;
+  top: 0;
+  width: 100%;
+}
+
+.box-shadow-black {
+  box-shadow: 3px 4px 7px 1px rgba(0, 0, 0, 0.3);
+}
+
+.px-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.fz-16 {
+  font-size: 16px;
+}
+
+.fz-20 {
+  font-size: 20px;
+}
+
+.fz-30 {
+  font-size: 30px;
+}
+
+.fz-45 {
+  font-size: 45px;
+}
+
+
+.fz-50 {
+  font-size: 50px;
+}
+
+.month {
+  position: relative;
+  right: 15px;
+}
+
+.carta {
+  width: 250px;
+  height: 410px;
+  border-radius: 30px;
+  color: #FFFFFF;
+}
+
+.tittle-carta {
+  padding: 20px 50px;
+  border-bottom: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+
+
+.cont-servi {
+ height: 100%;
+ max-height: 300px;
+ overflow: auto;
+ padding: 20px 50px;
+ margin-top: 20px;
+}
+
+.text-basic {
+  padding: 0px 50px;
+  padding-bottom: 20px;
+}
+
+.border-white {
+  border-top: 1px solid white;
+}
+
+.btn-sty {
+  border-radius: 7px;
+  padding: 7px;
+  border: none;
+}
+
+.fl-column {
+  flex-direction: column;
+}
+
+.max-width-500 {
+  width: 100%;
+  max-width: 500px;
+}
+.bg-red-gradient{
+  background: linear-gradient(180deg, rgba(250,254,255,1) 31%, rgba(186,47,68,1) 100%);
+}
+.color-gradient{
+  background: linear-gradient(90deg, rgba(250,254,255,1) 31%, rgba(186,47,68,1) 100%) !important;
+}
+
+.bg-red{
+  background-color: rgba(186,47,68,1) !important; 
+  border-color: rgba(186,47,68,1) !important;
+}
+
+.br-20{
+  border-radius: 20px;
+}
+
+.bg-gris-trans {
+  background-color: #20202050;
+}
+
+@media (max-width: 768px) {
+  #boddy-home h1{
+    font-size: 2rem;
+  }
+
+  #boddy-home .fz-16{
+    font-size: 14px;
+  }
+  .m-size{
+    font-size:14px !important; 
+  }
+}
+
+
+ @media (max-width: 500px) {
+
+ #footer-h h2{
+   font-size: 1.5rem !important;
+  }
+
+  #footer-h img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  
+  #footer-h .fz-30 {
+    font-size: 25px;
+  }
+
+}
+
+@media (max-width: 375px) {
+  #boddy-home h1{
+    font-size: 1.5rem;
+  }
+
+  #boddy-home .fz-16{
+    font-size: 12px;
+  }
+
+} 
